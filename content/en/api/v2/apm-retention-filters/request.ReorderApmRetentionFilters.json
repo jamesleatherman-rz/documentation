@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "id": "jdZrilSJQLqzb6Cu7aub9Q",
+      "attributes": {
+        "name": "Application Security Monitoring Default",
+        "rate": 1.0,
+        "enabled": false,
+        "filter_type": "spans-sampling-processor",
+        "filter": {
+          "query": "@appsec.event:true"
+        },
+        "modified_by": "",
+        "modified_at": 1694530398,
+        "created_by": "",
+        "created_at": 1694530398,
+        "editable": false,
+        "execution_order": 1
+      },
+      "type": "apm_retention_filter"
+    },
+    {
+      "id": "yO_LgsMATMeCAKr4gcG7Eg",
+      "attributes": {
+        "name": "default",
+        "rate": 1.0,
+        "enabled": true,
+        "filter_type": "spans-sampling-processor",
+        "filter": {
+          "query": "analytics_enabled:true"
+        },
+        "modified_by": "",
+        "modified_at": 1694530398,
+        "created_by": "",
+        "created_at": 1694530398,
+        "editable": true,
+        "execution_order": 2
+      },
+      "type": "apm_retention_filter"
+    },
+    {
+      "id": "7RBOb7dLSYWI01yc3pIH8w",
+      "attributes": {
+        "name": "Error Default",
+        "rate": 1.0,
+        "enabled": true,
+        "filter_type": "spans-sampling-processor",
+        "filter": {
+          "query": "status:error"
+        },
+        "modified_by": "",
+        "modified_at": 1694530398,
+        "created_by": "",
+        "created_at": 1694530398,
+        "editable": false,
+        "execution_order": 3
+      },
+      "type": "apm_retention_filter"
+    }
+  ]
+}
